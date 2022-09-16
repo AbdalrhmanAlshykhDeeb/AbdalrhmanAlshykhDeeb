@@ -41,9 +41,9 @@ document.write("Iam In Page"); // stoped comment
 
 // let theTitle = "Elzero", pageDescraption="Elzero Web School", pageDate="5/25";
 
-// let card =   
+// let card =
           
-//           `<div> 
+//           `<div>
 //             <h3>${theTitle}</h3>
 //             <p>${pageDescraption}</p>
 //             <span>${pageDate}</span>
@@ -71,7 +71,7 @@ document.write("Iam In Page"); // stoped comment
 // console.log("`I\'m In \n \\\\ \n Love \\\\ \"\"\" \'\'\' \n \+\+ With \+\+ \n \\\"\"\"\\\"\"\" \n \"\"Javascript\"\"`` ");
 
 // console.log(`I'm In
-// \\\\ Love \\\\ """ '''' 
+// \\\\ Love \\\\ """ ''''
 // ++ With ++
 // \\"""\\'''
 // "" Javascript ""\`\` `);
@@ -86,7 +86,7 @@ document.write("Iam In Page"); // stoped comment
 
 // result=c.repeat(3);
 
-// console.log(`_${a}_${result}_${b}`);   
+// console.log(`_${a}_${result}_${b}`);
 
 // let a = 21;
 
@@ -722,7 +722,7 @@ vlue: 1;
 //       break;
 //     default: 'World'
 //       console.log('Its Not A Valid Day');
-//  
+//
 //}
 
 
@@ -815,3 +815,162 @@ vlue: 1;
 //   .toLowerCase()
 //   .slice(++arr1.length);
 // console.log(allArrs);
+
+
+// let start = 10;
+// let end = 100;
+// let exclude = 40;
+
+
+// for (let i = start; i <= end; i += start) {
+//     if (i === exclude) {
+//         continue
+//     }
+//     console.log(i);
+// }
+// Output
+// 10;
+// 20;
+// 30;
+// 50;
+// 60;
+// 70;
+// 80;
+// 90;
+// 100;
+
+// let start = 10;
+// let end = 0;
+// let stop = 3;
+
+// for (let i = start; i > end; i--){
+//     if (i < start) {
+//         console.log(`0${i}`)
+//     } else{
+//         console.log(`${i}`)
+//     }
+//     if (i === stop) {
+//         break
+//     }
+// }
+
+// Output
+// 10;
+// 09;
+// 08;
+// 07;
+// 06;
+// 05;
+// 04;
+// 03;
+
+
+// let start = 1;
+// let end = 6;
+// let breaker = 2;
+
+// for (let i = start; i <= end; i++){
+//     console.log(i);
+//     for (let j = breaker; j < end; j+= breaker){
+//         console.log(`--${j}`)
+//     }
+// }
+
+// Output
+// 1;
+// --2;
+// --4;
+// 2;
+// --2;
+// --4;
+// 3;
+// --2;
+// --4;
+// 4;
+// --2;
+// --4;
+// 5;
+// --2;
+// --4;
+// 6;
+// --2;
+// --4;
+
+// let index = 10;
+// let jump = 2;
+// let end = 0;
+// let i = index;
+// for (; ;) {
+//     if (i === jump) break;
+//     if (i > end) {
+//         console.log(i);
+//     }
+//     i -= jump;
+// }
+
+// // Output
+// // 10;
+// // 8;
+// // 6;
+// // 4;
+
+// let friends = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+// let letter = "a";
+
+// number = letter.length
+
+// for (let i = letter.length - letter.length; i < friends.length; i++){
+//     if (friends[i].startsWith(letter.toUpperCase())) {
+//         continue;
+//     }
+//     console.log(`" ${ number } => ${ friends[i] }"`)
+//     number++
+// }
+// // Output
+// "1 => Sayed";
+// "2 => Eman";
+// "3 => Mahmoud";
+// "4 => Osama";
+// "5 => Sameh";
+
+// let start = 0;
+// let swappedName = "elZerO";
+// let result = '';
+// // Output
+
+// for (let i = start; i < swappedName.length; i++) {
+//     if (swappedName[i] === swappedName[i].toLowerCase()) {
+//         result += swappedName[i].toUpperCase();
+//     } else if (swappedName[i] === swappedName[i].toUpperCase()) {
+//         result += swappedName[i].toLowerCase()
+//     }
+// }
+// console.log(result);
+
+// let start = 0;
+// let mix = [1, 2, 3, "A", "B", "C", 4];
+
+
+// for (let i = ++start; i < mix.length; i++){
+//     if (typeof mix[i] === 'number') {
+//         console.log(mix[i]);
+//     }
+// }
+
+// for (let i = ++start; i < mix.length; i++) {
+//     if (typeof mix[i] === 'string') {
+//         continue;
+//     }
+//     console.log(mix[i]);
+// }
+
+// for (let i = start + mix.indexOf(2); i < mix.length; i++) {
+//     if (typeof mix[i] === 'string') {
+//         continue;
+//     }
+//     console.log(mix[i]);
+// }
+// Output
+// 2;
+// 3;
+// 4;
